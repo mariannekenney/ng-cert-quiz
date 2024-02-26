@@ -1,0 +1,29 @@
+.blog-post-container {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 20px;
+
+    form {
+        mat-form-field {
+            width: 100%;
+
+            input {
+                color: black;
+            }
+    
+            textarea {
+                max-height: 40vh;
+                overflow: auto;
+            }
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                margin: 0 8px;
+            }
+        }
+    }
+}

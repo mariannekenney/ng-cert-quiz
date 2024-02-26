@@ -1,0 +1,32 @@
+.blog-page-container {
+    mat-toolbar {
+        justify-content: space-between;
+    }
+
+    .blog-card {
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+    }
+
+    mat-card {
+        max-height: 100%;
+        overflow: hidden;
+
+        .emphasis {
+            font-weight: bold;
+        }
+
+        mat-card-content {
+            margin: 16px 0;
+            overflow: auto;
+        }
+
+        mat-card-actions > * {
+            margin-left: 16px;
+        }
+
+        mat-card-footer {
+            padding: 8px;
+        }
+    }
+}

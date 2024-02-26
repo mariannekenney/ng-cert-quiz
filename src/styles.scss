@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@include mat.core();
+
+$primary: mat.define-palette(mat.$indigo-palette);
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: mat.get-color-from-palette($primary, 'lighter');
+}
+
+html, body {
+  height: 100%;
+}
